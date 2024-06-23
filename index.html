@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculadora Imc</title>
+    <meta name="description" content="Calcule o seu IMC de forma fácil e rápida e receba um feedback.">
+
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Calcule seu IMC</h1>
+
+    <form class="form">
+        <div class="form-group">
+            <label for="peso" class="form-label">Peso (kg)</label>
+            <input type="number" class="form-input" id="peso" placeholder="Ex: 62.5" autocomplete="off" min="1" max="150" step="0.01">
+            <span class="msg-error">Valor inválido!</span>
+        </div>
+        <div class="form-group">
+            <label for="altura" class="form-label">Altura (cm)</label>
+            <input type="number" class="form-input" id="altura" placeholder="Ex: 165" autocomplete="off" min="1" max="300">
+            <span class="msg-error">Valor inválido!</span>
+        </div>
+        <button class="form-btn">Calcular Imc</button>
+    </form>
+
+    <div class="imc-result">
+        <span id="imc"></span>
+        <span id="classification"></span>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
